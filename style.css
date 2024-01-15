@@ -1,0 +1,73 @@
+/*SELECTORES*/
+#titulo{ /*se coloca #titulo, debido a que es una variable que declaramos en html con id y esto para referirnos a esa propiedad en específico*/
+    color:violet;
+}
+p.texto{ /*se utiliza .texto para referirse a la clase creada en html par la propiedad p, y la p antes de la clase texto es para indicar que se cambiará el estilo a las etiquetas p que contengan la clase texto*/
+    color:slateblue;
+}
+p.textoEspecial{
+    color:sienna;
+}
+p.especial{
+    color:blueviolet;
+}
+div p { /*Esto quiere decir que, en todas las etiquetas de div que contengan p como hijos o decendentes, queremos que tengan el siguiente estilo*/
+    color:darkblue;
+}
+div h2, div h3{ /*Esto es para seleccionar los h2 dentro del div Y Aparte también los h3 dentro de ese div*/
+    color: rgb(255,222,0);
+}
+
+*{ /*Para cambiar absolutamente todo, las cambia solamente si estas NO han sido definidas*/
+    font-size:24px; /*La fuente se cambia, de toda la página web*/
+    color:black; /*No cambia el color, porque ya está designado arriba*/
+}
+
+.color{
+    /*border:5px red inset;*/ /*con cntl+espacio se muestran todas las opciones */
+    /* ELEMENTOS PARA BORDER
+    dotted
+    dashed
+    solid
+    double
+    groove
+    ridge
+    inset
+    outset
+    none
+    hidden
+    ----PROPIEDADES DE BORDER-----
+    */
+    border-style: solid;
+    border-color: darkolivegreen;
+    border-radius:5px;;/*Borde redondeado*/
+    border-width: 2rem;/*ancho del borde*/
+    /*----UNIDADES DE MEDIDA------
+    cm-centímetros
+    mm-milímetros
+    in-pulgadas
+    pc-pica
+    em- dos veces el tamaño que se está utilizando(Recomendable)
+    rem- relativo al tamaño de la fuente del elemento raíz(recomendado)
+    */
+}
+#fondo{
+    /*----PROPIEDAD DE BACKGROUND---*/
+    background-color:rgba(255, 0, 0, 0.2);
+    /*opacity:0.2 ;*/ /*0-1. 0 no se ve nada y 1 se ve completamente. Le da la opacidad al elemento completo*/
+    height: 200px;
+    background-image: url('AbbeyRoad.jpg');/*poner imagen de fondo*/
+    background-size:cover/*(cover)se ajusta al tamaño del explorador*/ ; /*Redimensionar nuestra imágen de fondo*/
+    /*background-size:400px 400px (ancho y alto)*/
+    background-repeat: repeat-x; /*para que la imagen no se repita o se repita en la coordenadas deseadas*/
+    background-position: center top; /*en dónde comenzará a verse el fondo de nuestro elemento*/
+    /*UTILIZAR TODAS LAS PROPIEDADES ANTERIORES*/
+    background: #f00 url(AbbeyRoad.jpg) repeat-y center bottom /100px 100px ;
+    
+}
+.margen{
+    /*PROPIEDAD DE MARGEN*/
+    background-color: chocolate;
+    margin: 15px 20px 25px 30px ; /*15px-arriba 20px-derecha 25px-abajo 30px-izquierda*/
+    padding: 30px 25px 20px 15px;
+}
