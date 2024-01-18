@@ -68,6 +68,53 @@ div h2, div h3{ /*Esto es para seleccionar los h2 dentro del div Y Aparte tambi�
 .margen{
     /*PROPIEDAD DE MARGEN*/
     background-color: chocolate;
-    margin: 15px 20px 25px 30px ; /*15px-arriba 20px-derecha 25px-abajo 30px-izquierda*/
-    padding: 30px 25px 20px 15px;
+    margin: 15px; /*Espacio fuera del elemento(arriba derecha abajo izquierda)*/
+    padding: 30px 25px 5px; /*Espacios dentro del elemento*/
+    border: solid 1px black;
+    height:200px ;/*Asignar un alto a los elementos*/
+    width: 50px; /*Asignar un alto*/
+    overflow: scroll;/*Cambiar la visibilidad de los elementos (ocultar cuando no se alcance a mostrar, agrega scroll etc)*/
+    outline:1px solid red;/*Borde que se coloca fuera del borde*/
+    
+}
+.text{
+    text-align: center; /*Alineación de texto*/
+    text-decoration: overline;/*Decoración de texto*/
+    text-shadow: 3px 5px 5px blue;/*Sombra a los textos(cuanto queremos mover "izquierda, abajo, cantidad de blur")*/
+    font-family:'Instrument Serif' ;/*fuente*/
+}
+/*LINKS*/
+a:link{ /*Seleccionar cuando el link no ha sido visitado*/
+    color:blueviolet;
+}
+a:visited{ /*cuando el link ya ha sido visitado*/
+    color:gray;
+}
+a:hover{ /*cuando pasa el mouse por encima*/
+    color:yellow;
+}
+a:active{ /*cuando se pincha el link*/
+    color:red;
+}
+/*LISTAS*/
+
+
+ul, li{
+    background-color: crimson; /*Fondo a la lista*/
+    /*list-style-type: none;/*Quitar el estilo predeterminado*/
+    padding-left: 0; /*quitar espaciado a la izquierda*/
+    list-style-type: square; /*viñetas que aparecerán*/
+}
+table{ /*y todo lo que la compone, th,td,tr*/
+    width:100% ; /*todo el ancho*/
+    border-collapse: collapse; /*Quitar separación de casillas*/
+    
+}
+th,td{
+    border:solid 1px #f0f;/*asignar borde*/
+    padding: 5px;
+}
+th{ /*Características solamente para la cabecera de las tablas*/
+    background-color: tomato;
+    color: white;
 }
