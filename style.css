@@ -115,6 +115,55 @@ th,td{
     padding: 5px;
 }
 th{ /*Características solamente para la cabecera de las tablas*/
-    background-color: tomato;
-    color: white;
+    background-color: tomato; /*Pintal el color de la cabecera*/
+    color: white; /*Color de fuente*/
 }
+tr:hover{ /*Que la fila se seleccione al posicionar el mouse*/
+    background-color: white;
+    color: black;
+}
+tr:nth-child(even){ /*(Even)inpar(Odd)Par Seleccionar solamente algunos elementos en particular*/
+    background-color: #ee3;
+}
+tr:hover{ /*Que la fila se seleccione al posicionar el mouse*/
+    background-color: white;
+    color: black;
+    cursor:pointer/*colocar la manita cuando se pase el mouse por encima*/
+}
+span{
+    display: block; /*Viene por defecto en casi todos los elementos que se usan en html, brincar línea*/
+    /*display: none; /*Los elementos desaparecen*/
+    /*visibility: hidden; /*Los elementos se esconden*/
+    max-width: 300px; /*El ancho maximo*/
+    background-color: blueviolet;
+}
+.inline{
+    display: inline; /*para que la división se ponga de ladon*/
+}
+#position{
+    /*position: static; /*es como vienen por defecto los elementos*/
+    /*position: relative; /*Posición relativa, es decir, puede estar en donde quieramos*/
+    left: 20px; /*distancia que se mueva a la izquierda*/
+    top: 25px;
+    /*position: fixed; /*se posiciona en el mismo lugar en el explorador, aunque se scrolee hacia abajo*/
+    /*position:sticky;*/
+}
+.left{
+    float:left; /*Hace a los elementos flotantes, ya sea a la izquierda o derecha y los  elementos sobrantes los posiciona al contrario*/
+    width: 200px;
+    height: 200px;
+}
+.right{
+    float: right;
+}
+.container{
+    height: 200px;
+}
+.card{
+    border:solid salmon;
+    border-radius: 5px;
+    margin: 0 15px; /*0(horizontal) 15(vertical)*/
+}
+
+
+
