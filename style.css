@@ -159,11 +159,22 @@ span{
 .container{
     height: 200px;
 }
-.card{
-    border:solid salmon;
-    border-radius: 5px;
-    margin: 0 15px; /*0(horizontal) 15(vertical)*/
+.column{
+    
+    margin: 0 ; /*0(horizontal) 15(vertical)*/
+    padding: 10px 0px;
+    width: 33.3%;
 }
-
-
+.inline-block{
+    display: inline-; /*cuando son solo inline no se les puede asignar la propiedad de width ni a de height, la de inline-block sí se usa por ejemplo en los menús de navegación*/
+    height: 55px;
+    background-color: chocolate;
+}
+.centrar{
+    width: 100px;
+    margin: 0 auto; /*0 para que no se centre verticalmente y auto es para que se centre horizontalmente*/
+    background-color: saddlebrown;
+    text-align: center;
+    padding: 50px 0;
+}
 
